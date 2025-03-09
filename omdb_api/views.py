@@ -5,7 +5,9 @@ from dotenv import dotenv_values
 from rest_framework import status as status_codes
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
+
 config = dotenv_values(".env")
+
 
 class OmdbApiClient:
 
@@ -40,7 +42,7 @@ class OmdbSearchApiView(APIView):
                     "title": item.get("Title", None),
                     "year": item.get("Year", None),
                     "poster": item.get("Poster", None),
-                    "id": item.get("imdbID", None)
+                    "id": item.get("imdbID", None),
                 }
                 for item in result.get("Search", data)
             ]
