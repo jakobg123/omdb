@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+*.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Django-related files
+db.sqlite3  # Ignore SQLite database file (remove if using PostgreSQL/MySQL)
+*.sqlite3
+*.db
+*.db-journal
+media/  # Ignore uploaded media files
+staticfiles/  # Ignore collected static files
+
+# Django migrations (only ignore auto-generated migration files)
+*/migrations/*.pyc
+*/migrations/*.py, !*/migrations/__init__.py
+
+# Environment variables and settings
+.env
+*.env
+config/settings_local.py  # Ignore local settings
+
+# Logs
+logs/
+*.log
+debug.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Python virtual environment files
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Testing and coverage reports
+.coverage
+htmlcov/
+*.cover
+*.py,cover
+.tox/
+.nox/
+pytest_cache/
+coverage.xml
+nosetests.xml
+test-results/
+
+# Frontend related
+node_modules/
+dist
+npm-debug.log*
+yarn-error.log*
