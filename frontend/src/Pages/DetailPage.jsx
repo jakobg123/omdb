@@ -8,7 +8,7 @@ const DetailPage = () => {
     const {id} = useParams()
 
     useEffect(() => {
-        if(!hasMounted.current){
+        if (!hasMounted.current) {
             hasMounted.current = true;
             return
         }
@@ -20,10 +20,11 @@ const DetailPage = () => {
 
         getDetailData()
 
-        return () => {}
+        return () => {
+        }
     }, []);
 
-    return(
+    return (
         <div>
             <Link to={"/"}>Home</Link>
             <h2>Movie details</h2>
